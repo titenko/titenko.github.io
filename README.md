@@ -1,2 +1,2 @@
-# geekhubmedia.github.io
-GeekHubMedia Hosting
+# titenko.github.io
+Titenko Hosting
