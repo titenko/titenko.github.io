@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+### Обо мне:
 
-### More Information
+Доброе время суток, меня зовут Максим Титенко. Добро пожаловать в мой околотехноблог "TITENKO" здесь вы сможете прочитать новости из сферы IT и технологий, найти различные интересные разработки и проекты веб-разработки - процесс создания веб-сайта или веб-приложения. Так же интересные фишки и программное обеспечение для различных операционных систем: Windows, Mac OS, Linux. Информацию о различных мобильных приложениях которые по моему мнению достойны внимания, гаджеты и многое другое.
 
-A place to include any other types of information that you'd like to include about yourself.
+### Email:
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[titenko.m@gmail.com](mailto:titenko.m@gmail.com)
