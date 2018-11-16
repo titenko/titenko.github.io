@@ -16,11 +16,37 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <script src="{{ site.baseurl }}/go-top.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="https://titenko.weebly.com/files/theme/go_top.js"></script>
+    <!-- <script src="https://titenko.weebly.com/files/theme/go_top.js"></script> -->
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
   <body>  
+    
+  <script>    
+    $(document).ready(function(){
+  $('body').append('<a href="#" id="go-top" title="Р’РІРµСЂС…"><i class="fas fa-chevron-up"></i> Наверх</a>');
+});
+
+$(function() {
+ $.fn.scrollToTop = function() {
+  $(this).hide().removeAttr("href");
+  if ($(window).scrollTop() >= "250") $(this).fadeIn("slow")
+  var scrollDiv = $(this);
+  $(window).scroll(function() {
+   if ($(window).scrollTop() <= "250") $(scrollDiv).fadeOut("slow")
+   else $(scrollDiv).fadeIn("slow")
+  });
+  $(this).click(function() {
+   $("html, body").animate({scrollTop: 0}, "slow")
+  })
+ }
+});
+
+$(function() {
+ $("#go-top").scrollToTop();
+});
+    </script>
+  
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
