@@ -16,6 +16,7 @@ permalink: /partners/
 - Кэшбек до 20%  
 Оформите бесплатную карточку по персональной ссылке и сразу получите 50 грн на счет: **[monobank](https://goo.gl/eZpVqy)**
 
+---
 
 **[EPN CASHBACK](http://ali.pub/2ty5ms)**
 Регестрируйся на [**ePN Cashback**](https://ali.pub/2ty5ms) и начинай экономить на покупках уже сейчас:  
