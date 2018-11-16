@@ -5,7 +5,7 @@ permalink: /partners/
 ---
 
 ## Партнеры блога:
-[MONOBANK | UNIVERSAL BANK](https://goo.gl/eZpVqy)
+**[MONOBANK | UNIVERSAL BANK](https://goo.gl/eZpVqy)**
 Вы уже слышали о **Monobank**? Если еще нет, то сейчас самое время познакомиться с первым Online банком Украины, от бывшего топ менеджмента Приватбанка. Заказывайте карту сейчас и получите 50 грн. на счет: **[monobank](https://goo.gl/eZpVqy)**  
 **Monobank** - это надежно, удобно и современно!  
 Кроме того это:  
@@ -15,8 +15,9 @@ permalink: /partners/
 - Депозиты до 15%  
 - Кэшбек до 20%  
 Оформите бесплатную карточку по персональной ссылке и сразу получите 50 грн на счет: **[monobank](https://goo.gl/eZpVqy)**
----
-[EPN CASHBACK](http://ali.pub/2ty5ms)
+
+
+**[EPN CASHBACK](http://ali.pub/2ty5ms)**
 Регестрируйся на [**ePN Cashback**](https://ali.pub/2ty5ms) и начинай экономить на покупках уже сейчас:  
 Покупая на **AliExpress**, **Ozon**, **Asos**, **GearBest**, **JD**, **BangGood**, **Lamoda**, **М.Видео**, **Связной**, **AviaSales**, **Tutu**, **Спортмастер**, **Ашан** вы можете вернуть до 90% от стоимости ваших заказов.  
 **Что такое Cashback Service?**  
