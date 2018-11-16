@@ -16,6 +16,7 @@ avatar: https://raw.githubusercontent.com/titenko/titenko.github.io/master/image
 
 # Includes an icon in the footer for each username you enter
 footer-links:
+  telegram: http://t.me/MaksymTitenko
   dribbble:
   email:
   facebook:
@@ -25,7 +26,7 @@ footer-links:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
+  twitter: https://twitter.com/titenko_maksym
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
