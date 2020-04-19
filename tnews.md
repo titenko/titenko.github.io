@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Telegram News
-permalink: /tnews/
+permalink: "/tnews/"
+layout: page
 ---
 
 <img alt="" src="http://www.mediafire.com/convkey/06c9/l11qgrk4dpf7o0fzg.jpg" style="width:100%" />

@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Donate
-permalink: /donate/
+permalink: "/donate/"
+layout: page
 ---
 
 <p style="text-align:center"><strong>Пожертвуйте на кофе ☕️&nbsp;</strong></p>
