@@ -1,24 +1,12 @@
-
 var useDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
 tinymce.init({
-  selector: 'textarea#full-featured',
-  plugins: 'print preview powerpaste casechange importcss tinydrive searchreplace autolink autosave save directionality advcode visualblocks visualchars fullscreen image link media mediaembed template codesample table charmap hr pagebreak nonbreaking anchor toc insertdatetime advlist lists checklist wordcount tinymcespellchecker a11ychecker imagetools textpattern noneditable help formatpainter permanentpen pageembed charmap tinycomments mentions quickbars linkchecker emoticons advtable',
-  tinydrive_token_provider: 'URL_TO_YOUR_TOKEN_PROVIDER',
-  tinydrive_dropbox_app_key: 'YOUR_DROPBOX_APP_KEY',
-  tinydrive_google_drive_key: 'YOUR_GOOGLE_DRIVE_KEY',
-  tinydrive_google_drive_client_id: 'YOUR_GOOGLE_DRIVE_CLIENT_ID',
-  mobile: {
-    plugins: 'print preview powerpaste casechange importcss tinydrive searchreplace autolink autosave save directionality advcode visualblocks visualchars fullscreen image link media mediaembed template codesample table charmap hr pagebreak nonbreaking anchor toc insertdatetime advlist lists checklist wordcount tinymcespellchecker a11ychecker textpattern noneditable help formatpainter pageembed charmap mentions quickbars linkchecker emoticons advtable'
-  },
-  menu: {
-    tc: {
-      title: 'TinyComments',
-      items: 'addcomment showcomments deleteallconversations'
-    }
-  },
-  menubar: 'file edit view insert format tools table tc help',
-  toolbar: 'undo redo | bold italic underline strikethrough | fontselect fontsizeselect formatselect | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist checklist | forecolor backcolor casechange permanentpen formatpainter removeformat | pagebreak | charmap emoticons | fullscreen  preview save print | insertfile image media pageembed template link anchor codesample | a11ycheck ltr rtl | showcomments addcomment',
+  selector: 'textarea#full-featured-non-premium',
+  plugins: 'print preview paste importcss searchreplace autolink autosave save directionality code visualblocks visualchars fullscreen image link media template codesample table charmap hr pagebreak nonbreaking anchor toc insertdatetime advlist lists wordcount imagetools textpattern noneditable help charmap quickbars emoticons',
+  imagetools_cors_hosts: ['picsum.photos'],
+  menubar: 'file edit view insert format tools table help',
+  toolbar: 'undo redo | bold italic underline strikethrough | fontselect fontsizeselect formatselect | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist | forecolor backcolor removeformat | pagebreak | charmap emoticons | fullscreen  preview save print | insertfile image media template link anchor codesample | ltr rtl',
+  toolbar_sticky: true,
   autosave_ask_before_unload: true,
   autosave_interval: '30s',
   autosave_prefix: '{path}{query}-{id}-',
@@ -38,6 +26,22 @@ tinymce.init({
     { title: 'Some class', value: 'class-name' }
   ],
   importcss_append: true,
+  file_picker_callback: function (callback, value, meta) {
+    /* Provide file and text for the link dialog */
+    if (meta.filetype === 'file') {
+      callback('https://www.google.com/logos/google.jpg', { text: 'My text' });
+    }
+
+    /* Provide image and alt text for the image dialog */
+    if (meta.filetype === 'image') {
+      callback('https://www.google.com/logos/google.jpg', { alt: 'My alt text' });
+    }
+
+    /* Provide alternative source and posted for the media dialog */
+    if (meta.filetype === 'media') {
+      callback('movie.mp4', { source2: 'alt.ogg', poster: 'https://www.google.com/logos/google.jpg' });
+    }
+  },
   templates: [
         { title: 'New Table', description: 'creates a new table', content: '<div class="mceTmpl"><table width="98%%"  border="0" cellspacing="0" cellpadding="0"><tr><th scope="col"> </th><th scope="col"> </th></tr><tr><td> </td><td> </td></tr></table></div>' },
     { title: 'Starting my story', description: 'A cure for writers block', content: 'Once upon a time...' },
@@ -50,22 +54,8 @@ tinymce.init({
   quickbars_selection_toolbar: 'bold italic | quicklink h2 h3 blockquote quickimage quicktable',
   noneditable_noneditable_class: 'mceNonEditable',
   toolbar_mode: 'sliding',
-  spellchecker_ignore_list: ['Ephox', 'Moxiecode'],
-  tinycomments_mode: 'embedded',
-  content_style: '.mymention{ color: gray; }',
-  contextmenu: 'link image imagetools table configurepermanentpen',
-  a11y_advanced_options: true,
+  contextmenu: 'link image imagetools table',
   skin: useDarkMode ? 'oxide-dark' : 'oxide',
   content_css: useDarkMode ? 'dark' : 'default',
-  /*
-  The following settings require more configuration than shown here.
-  For information on configuring the mentions plugin, see:
-  https://www.tiny.cloud/docs/plugins/premium/mentions/.
-  */
-  mentions_selector: '.mymention',
-  mentions_fetch: mentions_fetch,
-  mentions_menu_hover: mentions_menu_hover,
-  mentions_menu_complete: mentions_menu_complete,
-  mentions_select: mentions_select,
-  mentions_item_type: 'profile'
-});
+  content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
+ });
