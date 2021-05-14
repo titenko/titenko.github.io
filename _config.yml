@@ -28,7 +28,7 @@ footer-links:
   googleplus: 
 disqus: https-titenko-github-io
 google_analytics: 
-url: https://titenko.github.io/
+url: https://titenko.github.io/myblog
 baseurl: ''
 permalink: "/:title/"
 version: v1.2.0
