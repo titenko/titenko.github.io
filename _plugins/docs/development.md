@@ -1,6 +1,6 @@
 ---
 title: Development
-permalink: /development/
+permalink: "/development/"
 ---
 
 ### To install locally

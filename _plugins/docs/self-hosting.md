@@ -1,6 +1,6 @@
 ---
 title: Self Hosting
-permalink: /self-hosting
+permalink: "/self-hosting"
 description: Example configuration files for self-hosting jekyll-admin
 ---
 

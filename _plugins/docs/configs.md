@@ -1,7 +1,7 @@
 ---
 title: Configuration Options
-permalink: /configs/
---- 
+permalink: "/configs/"
+---
 
 Jekyll Admin related options can be specified in `_config.yml`
 under a key called `jekyll_admin`.

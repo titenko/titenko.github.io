@@ -1,7 +1,8 @@
 ---
 title: Front End
-permalink: /frontend/
-description: The Javascript-based front end of Jekyll Admin, built on the Ruby-based HTTP API.
+permalink: "/frontend/"
+description: The Javascript-based front end of Jekyll Admin, built on the Ruby-based
+  HTTP API.
 ---
 
 ## Tech Stack
