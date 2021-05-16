@@ -41,6 +41,11 @@ sass:
 gems:
 - jekyll-sitemap
 - jekyll-feed
+- octopress
+- jekyll-tagging
+- jekyll-redirect-from
+- pygments.rb
+- jemoji
 exclude:
 - Gemfile
 - Gemfile.lock
