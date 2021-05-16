@@ -32,4 +32,6 @@ footer-links:
   googleplus: 
 theme: minima
 plugins:
-- jekyll-feed
+- |-
+  jekyll-sitemap
+  jekyll-feed
