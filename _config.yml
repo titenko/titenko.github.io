@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #
 # This file contains configuration flags to customize your site
 #
@@ -56,28 +57,60 @@ baseurl: ""
 permalink: /:title/
 
 # Jekyll 3 now only supports Kramdown for Markdown
+=======
+---
+title: GeekHub
+timezone: Europe/Warsaw
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+footer-links:
+  dribbble: 
+  email: 
+  facebook: 
+  flickr: 
+  github: barryclark/jekyll-now
+  instagram: 
+  linkedin: 
+  pinterest: 
+  rss: 
+  twitter: jekyllrb
+  stackoverflow: 
+  youtube: 
+  googleplus: 
+disqus: 
+google_analytics: 
+email: titenko.m@gmail.com
+description: Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for Google search
+  results) and in your feed.xml site description.
+baseurl: 
+url: https://titenko.github.io/
+twitter_username: jekyllrb
+github_username: titenko
+theme: minima
+plugins:
+- jekyll-feed
+permalink: "/:title/"
+>>>>>>> 0f7169755bb89ec2954d2f4bd74632653dee559b
 kramdown:
-  # Use GitHub flavored markdown, including triple backtick fenced code blocks
   input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
   syntax_highlighter: rouge
   syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
-
-# Set the Sass partials directory, as we're using @imports
+    css_class: highlight
 sass:
-  style: :expanded # You might prefer to minify using :compressed
-
-# Use the following plug-ins
+  style: :expanded
 gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-
-# Exclude these files from your production _site
+- jekyll-sitemap
+- jekyll-feed
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - CNAME
+- Gemfile
+- Gemfile.lock
+- LICENSE
+- README.md
+- CNAME
