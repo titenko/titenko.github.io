@@ -1,0 +1,30 @@
+body{
+ background:#222;
+ color:#bbb; 
+}
+.text-block {
+  width: 250px;
+  margin: 50px;
+}
+
+#go-top {
+  margin:0 auto;
+  border:2px solid #bbb;
+  position: fixed; 
+  font-family: sans-serif;
+  line-height: 30px;
+  text-align: center;
+  color: #bbb;
+  bottom: 15px; 
+  right: 15px; 
+  cursor:pointer; 
+  display:none;
+  width: 90px;
+  height: 30px;
+  background: rgba(2, 2, 2, 0.5);
+  border-radius: 10px;
+}
+
+#go-top:hover {
+  background: rgba(2, 2, 2, 0.5);;
+}
