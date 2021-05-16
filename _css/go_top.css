@@ -1,11 +1,15 @@
-.scrollup{
-width:40px;
-height:40px;
-opacity:0.3;
+#toTop {
+width:100px;
+border:1px solid #ccc;
+background:#f7f7f7;
+text-align:center;
+padding:5px;
 position:fixed;
-bottom:50px;
-right:100px;
+bottom:10px; /* отступ кнопки от нижнего края страницы*/
+right:10px;
+cursor:pointer;
 display:none;
-text-indent:-9999px;
-background: url('icon_top.png') no-repeat;
+color:#333;
+font-family:verdana;
+font-size:11px;
 }
