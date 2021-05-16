@@ -1,22 +1,18 @@
+<script type="text/javascript">
 $(document).ready(function(){
-  $('body').append('<a href="#" id="go-top" title="Вверх">▲ Наверх</a>');
+ 
+$(window).scroll(function(){
+if ($(this).scrollTop() > 100) {
+$('.scrollup').fadeIn();
+} else {
+$('.scrollup').fadeOut();
+}
 });
-
-$(function() {
- $.fn.scrollToTop = function() {
-  $(this).hide().removeAttr("href");
-  if ($(window).scrollTop() >= "250") $(this).fadeIn("slow")
-  var scrollDiv = $(this);
-  $(window).scroll(function() {
-   if ($(window).scrollTop() <= "250") $(scrollDiv).fadeOut("slow")
-   else $(scrollDiv).fadeIn("slow")
-  });
-  $(this).click(function() {
-   $("html, body").animate({scrollTop: 0}, "slow")
-  })
- }
+ 
+$('.scrollup').click(function(){
+$("html, body").animate({ scrollTop: 0 }, 600);
+return false;
 });
-
-$(function() {
- $("#go-top").scrollToTop();
+ 
 });
+</script>
