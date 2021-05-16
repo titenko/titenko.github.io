@@ -1,7 +1,5 @@
 ---
-title: "GeekHub"
-header_title: "GeekHub"
-author: "Maksym Titenko"
+title: GeekHub
 timezone: UTC
 collections:
   posts:
@@ -10,6 +8,8 @@ collections:
   uploads:
     title: Uploads
     output: true
+header_title: GeekHub
+author: Maksym Titenko
 email: titenko.m@gmail.com
 description: Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for Google search
