@@ -16,6 +16,7 @@ description: Write an awesome description for your new site here. You can edit t
   results) and in your feed.xml site description.
 baseurl: ''
 url: https://github.com/titenko/titenko.github.io
+<<<<<<< HEAD
 footer-links:
   dribbble:
   email:
@@ -30,6 +31,10 @@ footer-links:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
+=======
+twitter_username: 
+github_username: 
+>>>>>>> 2b0e9f3c08f9e698e0abb0ef50b5057f33e2ccfd
 theme: minima
 plugins:
 - jekyll-feed
