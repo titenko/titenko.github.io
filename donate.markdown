@@ -1,5 +1,5 @@
 ---
-title: Donate
+title: Поддержать
 permalink: "/donate/"
 layout: page
 ---
