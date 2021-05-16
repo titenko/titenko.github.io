@@ -21,15 +21,17 @@ footer-links:
   email: 
   facebook: 
   flickr: 
-  github: barryclark/jekyll-now
+  github: titenko
   instagram: 
   linkedin: 
   pinterest: 
   rss: 
-  twitter: jekyllrb
+  twitter: 
   stackoverflow: 
   youtube: 
   googleplus: 
 theme: minima
 plugins:
-- jekyll-feed
+- |-
+  jekyll-sitemap
+  jekyll-feed
