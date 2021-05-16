@@ -1,5 +1,7 @@
 ---
-title: GeekHub
+title: "GeekHub"
+header_title: "GeekHub"
+author: "Maksym Titenko"
 timezone: UTC
 collections:
   posts:
