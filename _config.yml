@@ -15,7 +15,7 @@ description: Write an awesome description for your new site here. You can edit t
 baseurl: 
 url: https://titenko.github.io/
 twitter_username: jekyllrb
-github_username: jekyll
+github_username: titenko
 theme: minima
 plugins:
 - jekyll-feed
