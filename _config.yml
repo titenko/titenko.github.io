@@ -1,0 +1,35 @@
+---
+title: GeekHub
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+header_title: GeekHub
+author: Maksym Titenko
+email: titenko.m@gmail.com
+description: Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for Google search
+  results) and in your feed.xml site description.
+baseurl: https://titenko.github.io/jekyll
+url: https://github.com/titenko/titenko.github.io
+footer-links:
+  dribbble: 
+  email: 
+  facebook: 
+  flickr: 
+  github: barryclark/jekyll-now
+  instagram: 
+  linkedin: 
+  pinterest: 
+  rss: 
+  twitter: jekyllrb
+  stackoverflow: 
+  youtube: 
+  googleplus: 
+theme: minima
+plugins:
+- jekyll-feed
