@@ -23,6 +23,29 @@
   backgroundColor: 'rgb(0, 0, 0)',
   textColor: '#fff'
 })</script>
+	  
+	  <!--Menu-->
+    <script>
+        $(function() {
+        			var pull 		= $('#pull');
+        				menu 		= $('nav ul');
+        				menuHeight	= menu.height();
+        
+        			$(pull).on('click', function(e) {
+        				e.preventDefault();
+        				menu.slideToggle();
+        			});
+        
+        			$(window).resize(function(){
+                		var w = $(window).width();
+                		if(w > 320 && menu.is(':hidden')) {
+                			menu.removeAttr('style');
+                		}
+            		});
+        		});
+    </script>
+    <!--Menu End-->
+
 	 
 	  
     <div class="wrapper-masthead">
@@ -45,6 +68,19 @@
     </div>
 
     <div id="main" role="main" class="container">
+	    
+	    <nav class="clearfix">
+		<ul class="clearfix">
+			<li><a href="#">Главная</a></li>
+			<li><a href="#">Уроки</a></li>
+			<li><a href="#">Иконки</a></li>
+			<li><a href="#">Дизайн</a></li>
+			<li><a href="#">Web 2.0</a></li>
+			<li><a href="#">Инструменты</a></li>	
+		</ul>
+		<a href="#" id="pull">Меню</a>
+	</nav>
+	    
       {{ content }}
     </div>
 
