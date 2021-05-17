@@ -24,6 +24,10 @@
   textColor: '#fff'
 })</script>
 	  
+	  $(".navigation").navigation({
+  maxWidth: "10000px"
+});
+	  
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
@@ -44,6 +48,12 @@
     </div>
 
     <div id="main" role="main" class="container">
+	    <h5 class="nav_handle">Menu</h5>
+<nav class="navigation" data-navigation-handle=".nav_handle">
+	<a href="#">One</a>
+	<a href="#">Two</a>
+	<a href="#">Three</a>
+</nav>
       {{ content }}
     </div>
 
