@@ -27,30 +27,6 @@
   textColor: '#fff'
 })</script>
 	  
-	  <!--Menu-->
-    <script>
-        $(function() {
-        			var pull 		= $('#pull');
-        				menu 		= $('nav ul');
-        				menuHeight	= menu.height();
-        
-        			$(pull).on('click', function(e) {
-        				e.preventDefault();
-        				menu.slideToggle();
-        			});
-        
-        			$(window).resize(function(){
-                		var w = $(window).width();
-                		if(w > 320 && menu.is(':hidden')) {
-                			menu.removeAttr('style');
-                		}
-            		});
-        		});
-    </script>
-    <!--Menu End-->
-
-	 
-	  
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
@@ -61,11 +37,7 @@
             <p class="site-description">{{ site.description }}</p>
           </div>
 
-          <!--<navigation>
-            <a href="{{ site.baseurl }}/">Блог</a>  
-            <a href="{{ site.baseurl }}/donate">Поддержать</a>
-	    <a href="{{ site.baseurl }}/about">Обо мне</a>	  
-          </navigation>-->
+          
 		
         </header>
       </div>
