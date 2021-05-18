@@ -1,6 +1,10 @@
 ---
 title: Test
 date: 2021-05-16 23:48:00 +02:00
+categories:
+- news
+tags:
+- news
 ---
 
 Go TOP
