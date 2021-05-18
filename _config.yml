@@ -2,10 +2,6 @@
 title: TI10KO
 timezone: Europe/Warsaw
 collections:
-  news:
-    title: News
-    output: true
-    permalink: news
   posts:
     title: Posts
     output: true
