@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>	 	  
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+	  
+	  
+<!--Back to top-->	  
+<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  backgroundColor: 'rgb(0, 0, 0)',
+  textColor: '#fff'
+})</script>
+	  
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+            <p class="site-description">{{ site.description }}</p>
+          </div>
+
+          
+		
+        </header>
+      </div>
+    </div>
+	   
+    <div id="main" role="main" class="container">
+	    
+	 <nav class="clearfix">
+		<ul class="clearfix">
+			<li><a href="#">Главная</a></li>
+			<li><a href="{{ site.baseurl }}/">Блог</a></li>
+			<li><a href="{{ site.baseurl }}/donate">Поддержать</a></li>
+			<li><a href="#">Дизайн</a></li>
+			<li><a href="#">Web 2.0</a></li>
+			<li><a href="{{ site.baseurl }}/about">Обо мне</a></li>	
+		</ul>
+		<a href="#" id="pull">Меню</a>
+	</nav>   
+	    
+      {{ content }}
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          {% include svg-icons.html %}
+	<p style="text-align: center;">&copy; 2021 Maksym Titenko </p>
+        </footer>
+      </div>
+    </div>
+
+    {% include analytics.html %}
+  	
+  </body>
+</html>
