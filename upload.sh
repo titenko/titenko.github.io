@@ -1,4 +1,4 @@
 #!/bin/bash
-git add -A
-git commit -m update
-git push
+ git add --all
+ git commit -m "Initial commit"
+ git push -u origin master
