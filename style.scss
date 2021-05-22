@@ -8,7 +8,6 @@
 @import "reset";
 @import "variables";
 @import "news";
-@import "nav";
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -212,7 +211,7 @@ img {
   }
 }
 
-navi {
+nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
