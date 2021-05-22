@@ -5,6 +5,7 @@ collections:
   news:
     title: News
     output: true
+    permalink: news
   posts:
     title: Posts
     output: true
