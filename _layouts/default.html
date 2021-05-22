@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>TI10KO</title><meta property="og:site_name" content="TI10KO" />
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
@@ -28,23 +29,32 @@
       <div class="container">
         <header class="masthead clearfix">
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
           <div class="site-info">
             <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
             <p class="site-description">{{ site.description }}</p>
           </div>
-
-          <nav>
+          <navi>
             <a href="{{ site.baseurl }}/">Blog</a>
             <a href="{{ site.baseurl }}/news">News</a>
             <a href="{{ site.baseurl }}/donate">Donate</a>
             <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
+          </navi>
         </header>
+          <nav class="nav">
+		<ul>
+			<li class="current"><a href="#">Главная</a></li>
+			<li><a href="#">О Нас</a></li>
+			<li><a href="#">Портфолио</a></li>
+			<li><a href="#">Наши Услуги</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+	</nav>
+
       </div>
     </div>
 
     <div id="main" role="main" class="container">
+
       {{ content }}
     </div>
 

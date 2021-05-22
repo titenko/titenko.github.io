@@ -12,7 +12,7 @@ collections:
     title: Uploads
     output: true
 name: Maksym Titenko
-description: Web Developer from Somewhere
+description: Околотехно блог
 avatar: https://raw.githubusercontent.com/titenko/titenko.github.io/master/images/ti10ko.png
 footer-links:
   dribbble: 
@@ -23,7 +23,7 @@ footer-links:
   instagram: 
   linkedin: 
   pinterest: 
-  rss: 
+  rss: feed.xml
   twitter: 
   stackoverflow: 
   youtube: 
@@ -44,6 +44,9 @@ sass:
 gems:
 - jekyll-sitemap
 - jekyll-feed
+- jekyll-seo-tag
+- jekyll-paginate
+- jekyll-redirect-from
 exclude:
 - Gemfile
 - Gemfile.lock
