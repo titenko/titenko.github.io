@@ -4,8 +4,7 @@
 //
 // IMPORTS
 //
-@import "highlights";
-@import "svg-icons";
+
 @import "reset";
 @import "variables";
 // Syntax highlighting @import is at the bottom of this file
@@ -211,7 +210,7 @@ img {
   }
 }
 
-navigation {
+nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
@@ -262,27 +261,6 @@ navigation {
     font-style: italic;
   }
 
-.news > .news {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
-}
-
-.news > .news:last-child {
-  padding-bottom: 1em;
-  border-bottom: none;
-}
-
-.news {
-  blockquote {
-    margin: 1.8em .8em;
-    border-left: 2px solid $gray;
-    padding: 0.1em 1em;
-    color: $gray;
-    font-size: 22px;
-    font-style: italic;
-  }	
-	
-	
   .comments {
     margin-top: 10px;
   }
@@ -303,4 +281,28 @@ navigation {
 footer {
   padding: 20px 0;
   text-align: center;
+}
+
+// Settled on moving the import of syntax highlighting to the bottom of the CSS
+// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+@import "highlights";
+@import "svg-icons";
+
+.topbutton {
+width:100px;
+border:2px solid #ccc;
+background:#f7f7f7;
+text-align:center;
+padding:10px;
+position:fixed;
+bottom:50px;
+right:50px;
+cursor:pointer;
+color:#333;
+font-family:verdana;
+font-size:12px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-khtml-border-radius: 5px;
 }
