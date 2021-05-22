@@ -7,6 +7,7 @@
 
 @import "reset";
 @import "variables";
+@import "news";
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -18,7 +19,7 @@ html {
 }
 
 body {
-  background: $white;
+	background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
@@ -71,7 +72,7 @@ p {
 a {
   color: $blue;
   text-decoration: none;
-  cursor: pointer;
+	cursor: pointer;
   &:hover, &:active {
     color: $blue;
   }
@@ -260,28 +261,6 @@ nav {
     font-size: 22px;
     font-style: italic;
   }
-
-
-.newss > .news {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
-}
-
-.newss > .news:last-child {
-  padding-bottom: 1em;
-  border-bottom: none;
-}
-
-.news {
-  blockquote {
-    margin: 1.8em .8em;
-    border-left: 2px solid $gray;
-    padding: 0.1em 1em;
-    color: $gray;
-    font-size: 22px;
-    font-style: italic;
-  }
-
 
   .comments {
     margin-top: 10px;
