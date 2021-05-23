@@ -1,26 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% for page in site.pages %}
-  {% if page.url contains '.xml' or page.url contains 'assets' %}{% else %}
-      <url>
-        <loc>{{ site.url }}{{ page.url }}</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-       </url>
-  {% endif %}
-  {% endfor %}
-  {% for page in site.posts %}
-      <url>
-        <loc>{{ site.url }}{{ page.url | replace: 'index.html', '' }}</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-       </url>
-  {% endfor %}
-  {% for page in site.without-plugin %}
-      <url>
-        <loc>{{ site.url }}{{ page.url | replace: 'index.html', '' }}</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-       </url>
-  {% endfor %}
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://titenko.github.io/</loc>
+  <lastmod>2021-05-23T16:45:42+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://titenko.github.io/news/</loc>
+  <lastmod>2021-05-23T16:45:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://titenko.github.io/articles/</loc>
+  <lastmod>2021-05-23T16:45:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://titenko.github.io/donate/</loc>
+  <lastmod>2021-05-23T16:45:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://titenko.github.io/about/</loc>
+  <lastmod>2021-05-23T16:45:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://titenko.github.io/welcome-to-jekyll/</loc>
+  <lastmod>2021-05-23T16:45:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://titenko.github.io/2014-3-3-Hello-World/</loc>
+  <lastmod>2021-05-23T16:45:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://titenko.github.io/news/test/</loc>
+  <lastmod>2021-05-23T16:45:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://titenko.github.io/news/demo/</loc>
+  <lastmod>2021-05-23T16:45:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://titenko.github.io/news/next/</loc>
+  <lastmod>2021-05-23T16:45:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://titenko.github.io/articles/articles/</loc>
+  <lastmod>2021-05-23T16:45:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
