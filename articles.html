@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<div class="articles">
+  {% for article in site.article %}
+    <article class="article">
+
+      <h1><a href="{{ site.baseurl }}{{ article.url }}">{{ articles.title }}</a></h1>
+
+      <div class="entry">
+        {{ article.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ article.url }}" class="read-more">Читать дальше</a>
+    </article>
+  {% endfor %}
+</div>
