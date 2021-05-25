@@ -2,14 +2,14 @@
 title: TI10KO
 timezone: Europe/Warsaw
 collections:
-  notes:
-    title: Notes
-    output: true
   articles:
     title: Articles
     output: true
   news:
     title: News
+    output: true
+  notes:
+    title: Notes
     output: true
   posts:
     title: Posts
