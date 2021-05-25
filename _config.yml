@@ -2,6 +2,9 @@
 title: TI10KO
 timezone: Europe/Warsaw
 collections:
+  notes:
+    title: Notes
+    output: true
   articles:
     title: Articles
     output: true

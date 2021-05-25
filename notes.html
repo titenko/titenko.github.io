@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="notes">
+  {% for notes in site.notes %}
+    <article class="notes">
+
+      <h1><a href="{{ site.baseurl }}{{ notes.url }}">{{ notes.title }}</a></h1>
+
+      <div class="entry">
+        {{ notes.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ notes.url }}" class="read-more">Читать дальше</a>
+    </article>
+  {% endfor %}
+</div>
+
