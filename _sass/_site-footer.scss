@@ -2,6 +2,10 @@
     background-color: #444444;
     color: white;
     text-align: left;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust:100%
 }
 
 #myFooter .row {
@@ -152,9 +156,4 @@ position:relative;
 .col-sm-3{
     width:25%
     }
-}
-html{
-    font-family:sans-serif;
-    -webkit-text-size-adjust:100%;
-    -ms-text-size-adjust:100%
 }
