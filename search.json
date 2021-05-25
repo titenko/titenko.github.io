@@ -43,5 +43,18 @@ layout: none
       "content"  : "{{ post.content | strip_html | strip_newlines | escape }}"
 
     } {% unless forloop.last %},{% endunless %}
+    ,
+  {% for notes in site.notes %}
+    {
+
+      "title"    : "{{ notes.title | strip_html | escape }}",
+      "url"      : "{{ site.baseurl }}{{ notes.url }}",
+      "category" : "{{notes.categories | join: ', '}}",
+      "tags"     : "{{ notes.tags | join: ', ' }}",
+      "date"     : "{{ notes.date }}",
+      "discription" : "{{notes.description | strip_html | strip_newlines | escape }}",
+      "content"  : "{{ post.content | strip_html | strip_newlines | escape }}"
+
+    } {% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
