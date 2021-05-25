@@ -138,3 +138,17 @@ max-width: 740px;
 padding: 0 10px;
 width: 100%;
 }
+
+.col-sm-3 {
+position: relative;
+min-height:1px;
+padding-right:15px;
+padding-left:15px;
+}
+@media (min-width:768px){
+    .col-sm-3{
+    float: left; }
+.col-sm-3{
+    width: 25%;
+    }
+}
