@@ -9,17 +9,30 @@ layout: default
   enctype="multipart/form-data"
 >
   <div><label>
-    Your email:
+    Ваш email:
     <input style="width:100%" type="email" name="_replyto">
   </label></div>
-  <div><label>
-    Your message:
-    <textarea style="width:100%" name="message"></textarea>
-  </label></div>
-  <div><label>
-    Your file:
-    <input type="file" name="upload">
-  </label></div>
+
   <br>
+
+  <div>
+  <label>
+    Сообщение:
+    <textarea style="width:100%" name="message"></textarea>
+  </label>
+  </div>
+
+  <br>
+
+  <div>
+  <label>
+    Прикрепить файл:*
+    <input type="file" name="upload">
+  </label>
+  </div>
+
+  <br>
+
   <div><button type="submit">Send</button></div>
 </form>
+*Не обязательно
