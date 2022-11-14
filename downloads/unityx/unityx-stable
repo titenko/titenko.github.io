@@ -1,5 +1,0 @@
-#!/bin/bash
-sudo wget https://repo.unityx.org/unityx.key
-sudo apt-key add unityx.key
-echo 'deb https://repo.unityx.org/main stable main' | sudo tee /etc/apt/sources.list.d/unity-x.list
-sudo apt-get update

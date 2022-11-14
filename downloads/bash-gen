@@ -1,5 +1,0 @@
-#!/bin/bash
-cat >bash<<EOF
-#!/bin/bash
-EOF
-chmod +x bash
